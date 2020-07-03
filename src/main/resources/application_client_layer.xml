@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:moji="http://code.moji.com/schema/moji"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+	http://code.moji.com/schema/moji
+	http://code.moji.com/schema/moji/moji.xsd">
+
+    <!-- 配置注册中心(注册地址等 ) -->
+    <moji:registry id="reg" connectstr="192.168.9.5:2181,192.168.9.5:2181,192.168.9.5:2181" auth="admin:admin123"/>
+    <!-- 配置client端(服务接口class等) -->
+
+    <moji:client id="fsmService" monitor="true" maxActive="100" maxIdle="100" timeout="300000" name="fsmServer"
+                 group="platform" version="1.0.0" service="fsmService" iface="com.moji.java.moji_rpc.FsmService$Iface"/>
+</beans>
