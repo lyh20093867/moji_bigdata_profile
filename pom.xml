@@ -14,7 +14,7 @@
         <spring-restdocs.version>2.0.4.RELEASE</spring-restdocs.version>
         <spring-boot-admin.version>2.2.1</spring-boot-admin.version>
         <!--<spring.version>5.1.8.RELEASE</spring.version>-->
-        <spring.version>4.3.12.RELEASE</spring.version>
+        <spring.version>5.3.18</spring.version>
         <scala.compat.version>2.11</scala.compat.version>
         <spark.version>2.4.2</spark.version>
         <hadoop.version>2.7.2</hadoop.version>
